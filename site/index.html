@@ -121,7 +121,7 @@
             <tr><th scope="row">Labeled calibration benchmark</th><td>4,014 rows; 2,003 positive</td><td>How do keywords and the census pipeline recover known injected examples?</td></tr>
             <tr><th scope="row">Expanded-pattern scan</th><td>Reported 51,128,154 pages; 350 selected domains reviewed</td><td>What additional domains do revised rules surface?</td></tr>
             <tr><th scope="row">Controlled embedding evaluation</th><td>106 Set A targets and 36 Set B targets, each with a 1M-page clean background</td><td>Does fine-tuning help retrieve a page carrying a known payload?</td></tr>
-            <tr><th scope="row">Ermes Cyber Security S.p.A. export</th><td>34,347 rows; 7,416 distinct texts; 5,741 distinct URLs</td><td>Does the pipeline surface cases in this partner dataset?</td></tr>
+            <tr><th scope="row">Ermes Cyber Security S.p.A. research sample</th><td>A very small sample of the partner's dataset: 34,347 rows; 7,416 distinct texts; 5,741 distinct URLs</td><td>Does the pipeline surface cases in the supplied sample?</td></tr>
           </tbody></table></div>
           <p>The synthetic work uses injected content in clean host pages, including a 2024-46 Common Crawl source. Historical in-the-wild scans use a separate 2024-42 snapshot. The 2026 investigation uses CC-MAIN-2026-25. These populations are not interchangeable, even when they share a year.</p>
           <h3>What the models actually see</h3>
@@ -192,7 +192,7 @@ as root.</p></blockquote>
           <p>Independent monitoring provides evidence of increased activity. Google reports a <strong>32% relative increase in malicious-category detections between November 2025 and February 2026</strong> across repeated Common Crawl scans. Its researchers also expect the scale and sophistication of attempts to grow, as more capable AI systems become valuable targets and automation lowers the cost of attacking them. The measured increase and the expectation of future growth are distinct claims. <a class="cite" href="#ref-google">[1]</a></p>
           <p>Our historical pattern scans reported <strong>zero confirmed adversarial cases among approximately 1.31 billion pages from 2024</strong>, compared with <strong>21 among 14.6 million pages from 2026</strong>. These reported counts have not been independently reproduced. The contrast is consistent with increased activity, but differences in crawl populations, text coverage, sampling, and review prevent a controlled growth estimate. Zero detections in the earlier scan does not establish that attacks were absent.</p>
           <p><strong>Continued growth and diversification are reasonable planning assumptions; an exponential trend has not been established.</strong> Our detection experiments also miss known examples, so the observed cases form an incomplete inventory. The number of undiscovered attacks remains unknown. Together, these findings motivate continuous discovery and repeated evaluation as the threat changes.</p>
-          <p>The inspected Ermes Cyber Security S.p.A. export produced two initial claims and zero confirmations. That is a result for this dataset and pipeline, rather than proof that the wider source population contains no attacks.</p>
+          <p>The investigation also examined a <strong>very small research sample of the Ermes Cyber Security S.p.A. dataset</strong>. The pipeline produced two initial claims and zero confirmations within that sample. The counts in Table 2 describe only the supplied sample; they do not describe the size of Ermes's full dataset. This limited evaluation does not establish attack prevalence or detection coverage across the partner's wider collection.</p>
         </section>
 
         <section id="detection" aria-labelledby="detection-title">
@@ -316,7 +316,7 @@ as root.</p></blockquote>
         <section id="data-availability" aria-labelledby="data-availability-title">
           <div class="section-label">12 / Data access</div>
           <h2 id="data-availability-title">Data available on request.</h2>
-          <p>We are happy to share the indexed and embedded dataset used in this work upon request. The dataset spans dozens of terabytes, making a direct download from this website impractical. To request access and arrange a transfer, please contact <a href="mailto:mlhouse@qbeast.io">mlhouse@qbeast.io</a>.</p>
+          <p>We are happy to share the indexed and embedded <strong>Common Crawl research dataset</strong> upon request. The dataset spans dozens of terabytes, making a direct download from this website impractical. This offer does not include the partner-provided Ermes research sample. To request access and arrange a transfer, please contact <a href="mailto:mlhouse@qbeast.io">mlhouse@qbeast.io</a>.</p>
         </section>
       </article>
     </div>

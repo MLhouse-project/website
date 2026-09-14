@@ -16,9 +16,9 @@ import re
 
 SITE = Path(__file__).resolve().parents[1] / "site"
 PRIVATE_REFERENCES = re.compile(
-    r"github\.com/mlhouse-project/prompt-ingestion-benchmark\b"
-    r"|github\.com/user-attachments/files/(?:32025779|32026102)\b"
-    r"|\b(?:PR|pull\s+request|issue)\s*#\s*(?:14|26|29|35)\b"
+    r"""github\.com/mlhouse-project/(?!website(?:[/#?\s\"'<>]|$))"""
+    r"|github\.com/user-attachments/files/"
+    r"|\b(?:PR|pull\s+request|issue)\s*#\s*\d+\b"
     r"|\b(?:audit-summary|observed-examples)\.md\b",
     re.IGNORECASE,
 )
