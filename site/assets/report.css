@@ -29,3 +29,55 @@
 @media print{@page{size:A4;margin:18mm 17mm}body{font-size:10pt;color:#000}a{color:inherit}.site-header{height:auto;padding:0 0 12pt;border-color:#aaa}.header-actions,.contents,.skip-link,.footer-back,.footer-support-link{display:none}.wordmark{font-size:16pt}.masthead,.report-layout{margin:0;max-width:none;display:block}.masthead{padding-top:22pt}.eyebrow{font-size:8pt}h1{font-size:34pt;max-width:none}.standfirst{font-size:14pt}.byline{font-size:8pt}.abstract{display:block;padding:18pt 0}.abstract h2{font-size:11pt}.abstract p{font-size:10pt}.report-layout{padding-top:20pt}.report-body section{padding-bottom:18pt;margin-bottom:18pt;scroll-margin:0}.report-body h2{font-size:22pt;break-after:avoid}.report-body h3{font-size:14pt;break-after:avoid}.section-label{font-size:8pt}.thesis p{font-size:15pt}p{orphans:3;widows:3}.metric-band,.figure,.example,.note,tr,.thesis{break-inside:avoid}.metric-band{background:#fff;color:#000;border:1px solid #777}.metric{border-color:#aaa}.metric b{font-size:26pt;color:#000}.metric span{font-size:9pt}.metric small{color:#333;font-size:8pt}.table-wrap{overflow:visible}table{font-size:9pt}caption,figcaption,.small,.source-list li,.note,.example p,.evidence-details{font-size:9pt}.pipeline li{background:none;border:1px solid #aaa}.source-list li{break-inside:avoid}.source-list code{font-size:8pt}.site-footer{padding:15pt 0;background:none}.site-footer p{font-size:8pt}.footer-support{padding-bottom:16pt}.footer-support h2{font-size:14pt;break-after:avoid}.footer-support-grid{display:block}.footer-credit+.footer-credit{margin-top:18pt}.footer-credit h3{font-size:9pt;break-after:avoid}.footer-funding-artwork{max-width:430px;margin-top:12pt;padding:0}.footer-compute-logos{margin-top:12pt}.footer-bsc-logo{width:170px}.footer-res-logo{width:100px}.footer-bottom{padding-top:12pt}.print-button{display:none!important}}
 
 @media print{.observed-examples{display:block}.observed-example{margin-bottom:18pt;padding-top:12pt}.observed-example h4{font-size:12pt;break-after:avoid}.example-kind{font-size:8pt}.observed-example blockquote{padding:10pt 12pt}.observed-example blockquote p{font-size:12pt}.observed-example .example-context{font-size:10pt}.observed-example figcaption,.observed-example code{font-size:8pt}.report-body .compact-acknowledgements h2{font-size:18pt}}
+
+/* Compact print layout for the review PDF and browser printing. */
+@media print{
+  body{line-height:1.45}
+  h1{font-size:30pt;line-height:1.08;margin:12pt 0}
+  .masthead{padding-top:12pt}
+  .standfirst{font-size:12pt;line-height:1.45;margin:12pt 0}
+  .byline{margin:12pt 0}
+  .abstract{padding:12pt 0;break-inside:avoid}
+  .abstract p{line-height:1.45;margin:0 0 8pt}
+  .abstract h3{font-size:12pt;margin:10pt 0 6pt}
+  .step-list{margin:10pt 0}
+  .step-list li{padding:8pt 0 8pt 28pt;break-inside:avoid}
+  .step-list li::before{top:9pt;font-size:8pt}
+  .step-list strong{margin-bottom:3pt}
+  .abstract .step-list li{padding-top:5pt;padding-bottom:5pt}
+  .abstract .step-list li::before{top:6pt}
+  .report-layout{padding-top:12pt}
+  .report-body section{padding-bottom:12pt;margin-bottom:12pt}
+  .report-body p{margin:0 0 9pt}
+  .report-body h2{font-size:18pt;margin:5pt 0 10pt}
+  .report-body h3{font-size:12pt;margin:14pt 0 7pt}
+  .section-label{break-after:avoid}
+  .figure,.table-wrap,.observed-examples{margin:12pt 0}
+  .figure{padding:12pt}
+  th,td{padding:7pt}
+  .evidence-details{padding:9pt;margin:10pt 0}
+  .evidence-details p{line-height:1.45}
+  .observed-example{padding-top:9pt;margin-bottom:12pt}
+  .observed-example h4{margin-bottom:7pt}
+  .observed-example blockquote{padding:8pt 10pt;margin-bottom:7pt}
+  .observed-example blockquote p{font-size:11pt}
+  .observed-example .example-context{line-height:1.45;margin-bottom:6pt}
+  .source-list{margin:10pt 0}
+  .source-list li{padding:8pt 0 8pt 23pt;line-height:1.45}
+  .source-list li::before{top:9pt;font-size:8pt}
+  .source-list p{margin:4pt 0 0}
+  .thesis{padding:12pt;margin:12pt 0}
+  .thesis p{font-size:13pt;line-height:1.4}
+  .footer-support h2,.footer-credit h3{break-after:avoid}
+  .footer-credit{break-inside:avoid}
+}
+@media print{
+  summary{break-after:avoid}
+  .table-wrap{break-inside:avoid}
+  .footer-support-grid{display:grid;grid-template-columns:1fr 1fr;gap:18pt}
+  .footer-credit+.footer-credit{margin-top:0}
+  .footer-funding-artwork{max-width:100%;margin-top:9pt}
+  .footer-compute-logos{gap:12pt;margin-top:9pt}
+  .footer-bsc-logo{width:115px}
+  .footer-res-logo{width:70px}
+}
