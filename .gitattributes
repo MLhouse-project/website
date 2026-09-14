@@ -1,0 +1,2 @@
+# Preserve the official BSC artwork's original bytes, including whitespace.
+site/assets/bsc-logo.svg -text -whitespace

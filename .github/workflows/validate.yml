@@ -1,0 +1,18 @@
+name: Validate website
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate report files and references
+        run: python3 scripts/validate_report_site.py
+      - name: Check reading enhancements
+        run: node --check site/assets/report.js
