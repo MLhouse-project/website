@@ -284,7 +284,18 @@ as root.</p></blockquote>
         <section id="data-availability" aria-labelledby="data-availability-title">
           <div class="section-label">11 / Data access</div>
           <h2 id="data-availability-title">Data availability</h2>
-          <p>We are happy to share the indexed and embedded <strong>Common Crawl research dataset</strong> upon request. The dataset spans dozens of terabytes, making a direct download from this website impractical. This offer does not include the partner-provided Ermes research sample. To request access and arrange a transfer, please contact <a href="mailto:mlhouse@qbeast.io">mlhouse@qbeast.io</a>.</p>
+          <p>MLHouse has created datasets for testing retrieval, detector training, and data-lakehouse workloads. The following resources are available to researchers upon request; for collections still in preparation, access covers the available portions.</p>
+          <h3>Synthetic prompt-injection benchmark · Available</h3>
+          <p>Paired clean and injected web content, with labelled payloads and injection locations, supports controlled detection and retrieval experiments. The benchmark covers instruction overrides, retrieval-targeted manipulation, data-exfiltration requests, and obfuscation variants. Modified chunks are re-embedded with BGE-M3.</p>
+          <h3>Synthetic CRM lakehouse · Available</h3>
+          <p>A Salesforce-shaped, multi-tenant corpus combines structured business records with synthetic emails, activities, and other text. Deterministic relationships and LLM-generated content support experiments with SQL, full-text search, vector retrieval, and lakehouse layouts across three workload shapes.</p>
+          <h3>Common Crawl 2024 WET corpus · Embedded and indexed</h3>
+          <p>The project's processed 2024 WET text corpus is embedded with BGE-M3 and indexed for retrieval experiments. It provides a reusable historical collection for searching web content and comparing access methods. This describes our processed research corpus, rather than a complete archive of the web.</p>
+          <h3>Common Crawl 2026 WET corpus · In preparation</h3>
+          <p>We are preparing an embedded and indexed collection from CC-MAIN-2026-25, the June 2026 snapshot used in this report. A portion is already available for experiments; processing and indexing of the wider collection are ongoing.</p>
+          <h3>Collected prompt-injection attempts · In preparation</h3>
+          <p>We are assembling a database of observed prompt-injection attempts, retaining source context and review labels to support analysis and future evaluation. The collection is being curated; inclusion records an observed attempt, not proof of successful agent compromise.</p>
+          <p>The larger indexed and embedded collections span dozens of terabytes, so we arrange access or transfer individually instead of providing direct downloads from this website. To discuss available versions and request research access, write to <a href="mailto:mlhouse@qbeast.io">mlhouse@qbeast.io</a>. The sharing offer does not include the partner-provided Ermes research sample.</p>
         </section>
       </article>
     </div>
